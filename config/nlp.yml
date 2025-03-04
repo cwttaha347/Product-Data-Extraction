@@ -1,0 +1,64 @@
+extraction:
+  # General extraction settings
+  use_custom_rules: true
+  min_confidence: 0.6
+  max_entity_length: 100
+  enable_patterns: true
+
+# Entity patterns for rule-based matching
+patterns:
+  # Certification patterns
+  - label: CERTIFICATION
+    pattern:
+      - LOWER: {IN: ["iso", "ce", "ul", "csa", "rohs", "fcc", "astm", "ansi"]}
+      - IS_DIGIT: true
+        OP: "?"
+  
+  - label: CERTIFICATION
+    pattern:
+      - LOWER: "iso"
+      - TEXT: {REGEX: "[0-9]{4,5}(-[0-9])?"}
+  
+  # Model number patterns
+  - label: MODEL
+    pattern:
+      - SHAPE: {REGEX: "^[A-Z0-9]{3,10}$"}
+  
+  - label: MODEL
+    pattern:
+      - SHAPE: {REGEX: "^[A-Z0-9]+-[A-Z0-9]+$"}
+  
+  # Dimensions
+  - label: DIMENSION
+    pattern:
+      - SHAPE: {REGEX: "^\\d+(\\.\\d+)?$"}
+      - LOWER: {IN: ["mm", "cm", "in", "inches", "inch", "ft", "feet", "foot", "m"]}
+  
+  # Weight
+  - label: SPEC
+    pattern:
+      - SHAPE: {REGEX: "^\\d+(\\.\\d+)?$"}
+      - LOWER: {IN: ["kg", "g", "lbs", "lb", "oz", "ounce", "ounces"]}
+  
+  # Material
+  - label: MATERIAL
+    pattern:
+      - LOWER: {IN: ["aluminum", "steel", "plastic", "glass", "wood", "metal", "ceramic", "stainless"]}
+
+# Custom entity types to extract
+entity_types:
+  - PRODUCT
+  - MANUFACTURER
+  - BRAND
+  - MODEL
+  - SPEC
+  - DIMENSION
+  - MATERIAL
+  - CERTIFICATION
+  - PRICE
+  - SKU
+
+# Default model settings
+model:
+  name: en_core_web_lg  # Will fall back to en_core_web_sm if not available
+  disable: ["tok2vec", "parser", "attribute_ruler"]  # Disable components not needed for NER 

@@ -1,0 +1,27 @@
+# Core dependencies
+spacy==3.7.2
+# prodigy requires a license - optional for custom training
+pdfplumber==0.10.2
+pytesseract==0.3.10
+pdf2image==1.16.3
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.23
+pydantic==2.5.0
+fastapi==0.104.1
+uvicorn==0.24.0
+python-multipart==0.0.6
+
+# Data processing
+pandas==2.1.1
+numpy==1.26.1
+scikit-learn==1.3.2
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+
+# Development
+black==23.10.1
+isort==5.12.0
+flake8==6.1.0
+mypy==1.6.1 

@@ -1,0 +1,79 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog
+   /Pages 2 0 R
+>>
+endobj
+2 0 obj
+<< /Type /Pages
+   /Kids [3 0 R]
+   /Count 1
+>>
+endobj
+3 0 obj
+<< /Type /Page
+   /Parent 2 0 R
+   /Resources << /Font << /F1 4 0 R >> >>
+   /MediaBox [0 0 612 792]
+   /Contents 5 0 R
+>>
+endobj
+4 0 obj
+<< /Type /Font
+   /Subtype /Type1
+   /BaseFont /Helvetica
+>>
+endobj
+5 0 obj
+<< /Length 268 >>
+stream
+BT
+/F1 12 Tf
+50 700 Td
+(Product Data Sheet) Tj
+0 -50 Td
+(Product Name: Classic Steel Router XR-2000) Tj
+0 -20 Td
+(Manufacturer: Tech Solutions Inc.) Tj
+0 -20 Td
+(SKU: TS-XR2000-BLK) Tj
+0 -20 Td
+(Price: $199.99) Tj
+0 -20 Td
+(Weight: 2.5 kg) Tj
+0 -20 Td
+(Dimensions: 25 cm x 15 cm x 10 cm) Tj
+0 -20 Td
+(Color: Black) Tj
+0 -20 Td
+(Material: Steel, Plastic) Tj
+0 -40 Td
+(Features:) Tj
+0 -20 Td
+(- 1200W high-performance motor) Tj
+0 -20 Td
+(- Variable speed control (8,000-27,000 RPM)) Tj
+0 -20 Td
+(- Soft-start technology) Tj
+0 -20 Td
+(- Dust extraction port) Tj
+0 -20 Td
+(- Includes 3 router bits) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f
+0000000009 00000 n
+0000000058 00000 n
+0000000119 00000 n
+0000000242 00000 n
+0000000314 00000 n
+trailer
+<< /Size 6
+   /Root 1 0 R
+>>
+startxref
+634
+%%EOF 

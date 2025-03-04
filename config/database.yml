@@ -1,0 +1,32 @@
+database:
+  # Database connection settings
+  host: localhost
+  port: 5432
+  name: product_data
+  user: postgres
+  password: postgres  # Change this in production!
+  
+  # Connection pool settings
+  pool_size: 5
+  max_overflow: 10
+  pool_recycle: 3600  # Recycle connections after 1 hour
+
+# Query optimization settings
+query:
+  # Pagination defaults
+  default_limit: 20
+  max_limit: 100
+  
+  # Caching settings
+  enable_query_cache: true
+  cache_timeout: 300  # 5 minutes
+
+# Data validation settings
+validation:
+  # Maximum length constraints
+  max_name_length: 255
+  max_description_length: 2000
+  max_value_length: 255
+  
+  # Allowed characters for specific fields
+  sku_pattern: "^[A-Za-z0-9\\-_\\.]{1,100}$" 
