@@ -26,8 +26,8 @@ This system extracts product specifications, SKUs, dimensions, and certification
 
 1. Clone the repository:
 ```
-git clone <repository-url>
-cd product-data-extraction
+git clone https://github.com/cwttaha347/Product-Data-Extraction.git
+cd Product-Data-Extraction
 ```
 
 2. Run the initialization script:
